@@ -3,19 +3,19 @@ import java.util.*;
 public class Solution {
     public int[] solution(int []arr) {
         Stack<Integer> stack = new Stack<>();
+        
         for (int num : arr) {
-            if (!stack.empty()) {
-                if (stack.peek() == num) {
-                    stack.pop();
-                }
+            if (!stack.isEmpty() && stack.peek() == num) {
+                stack.pop();
             }
             stack.push(num);
         }
         
-        Integer[] temp = stack.toArray(new Integer[stack.size()]);
-        int[] result = new int[temp.length];
-        for (int i = 0; i < temp.length; i++) {
-            result[i] = temp[i];
+        int stackSize = stack.size();
+        int[] result = new int[stackSize];
+        
+        for (int i = 0; i < stackSize; i++) {
+            result[stackSize - i - 1] = stack.pop();
         }
 
         return result;
