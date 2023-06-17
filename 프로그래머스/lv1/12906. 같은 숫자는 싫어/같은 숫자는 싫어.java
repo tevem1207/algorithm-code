@@ -11,11 +11,10 @@ public class Solution {
             stack.push(num);
         }
         
-        int stackSize = stack.size();
-        int[] result = new int[stackSize];
+        int[] result = new int[stack.size()];
         
-        for (int i = 0; i < stackSize; i++) {
-            result[stackSize - i - 1] = stack.pop();
+        for (int i = 0; i < result.length; i++) {
+            result[result.length - i - 1] = stack.pop();
         }
 
         return result;
