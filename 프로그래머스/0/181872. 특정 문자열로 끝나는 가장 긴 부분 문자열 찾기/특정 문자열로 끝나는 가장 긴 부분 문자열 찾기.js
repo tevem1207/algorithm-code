@@ -1,0 +1,1 @@
+const solution = (a, b) => a.slice(0, a.lastIndexOf(b) + b.length)
