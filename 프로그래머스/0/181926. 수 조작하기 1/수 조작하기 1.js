@@ -1,1 +1,1 @@
-const solution = (n, control) => control.split("").reduce((a, b) => a + (b === "w" ? 1 : b === "s" ? -1 : b === "d" ? 10 : -10), n)
+const solution = (n, c) => [...c].reduce((a, b) => a + (b === "w" ? 1 : b === "s" ? -1 : b === "d" ? 10 : -10), n)
