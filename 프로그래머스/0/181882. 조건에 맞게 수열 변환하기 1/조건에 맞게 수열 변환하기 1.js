@@ -1,0 +1,1 @@
+const solution = arr => arr.map((n) => n >= 50 && !(n % 2) ? n / 2 : n < 50 && n % 2 ? n * 2 : n)
