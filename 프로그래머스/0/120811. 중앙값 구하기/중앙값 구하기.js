@@ -1,0 +1,1 @@
+const solution = (a) => a.sort((a, b) => a - b).at((a.length - 1) / 2)
