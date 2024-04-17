@@ -1,0 +1,1 @@
+const solution = n => [...Array(parseInt((n + 1)/ 2))].map((_, index) => index * 2 + 1)
