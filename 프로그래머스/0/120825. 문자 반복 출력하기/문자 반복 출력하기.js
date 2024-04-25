@@ -1,0 +1,1 @@
+const solution = (m, n) => m.split("").map(s => s.repeat(n)).join("")
