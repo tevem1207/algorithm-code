@@ -1,0 +1,1 @@
+const solution = h => parseInt(h / 5) + parseInt(h % 5 / 3) + (h % 5 % 3)
