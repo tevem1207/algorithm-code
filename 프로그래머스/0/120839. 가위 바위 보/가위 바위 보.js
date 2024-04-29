@@ -1,0 +1,1 @@
+const solution = r => r.split("").map(n => n === "0" ? 5 : n === "2" ? 0 : 2).join("")
