@@ -1,0 +1,1 @@
+const solution = n => n.reduce((a, c) => a * c, 1) > (n.reduce((a, c) => a + c, 0)) ** 2 ? 0 : 1
