@@ -1,0 +1,1 @@
+const solution = (a, b) => [...a].filter((c, i) => !((i + 1) % b) && c).join("")
