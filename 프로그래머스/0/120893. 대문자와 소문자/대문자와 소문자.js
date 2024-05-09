@@ -1,1 +1,1 @@
-const solution = s => [...s].map(t => t === t.toUpperCase() ? t.toLowerCase() : t.toUpperCase()).join("")
+const solution = s => [...s].reduce((a, c) => a + (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()), "")
