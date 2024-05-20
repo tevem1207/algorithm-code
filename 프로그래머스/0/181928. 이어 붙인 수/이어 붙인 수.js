@@ -1,0 +1,1 @@
+const solution = a => Number(a.filter(n => n % 2).join("")) + Number(a.filter(n => !(n % 2)).join(""))
